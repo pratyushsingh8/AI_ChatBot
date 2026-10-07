@@ -589,21 +589,6 @@ If you found this project useful or interesting, consider giving the repository 
 ---
 ```
 
-### One important change before you upload it
-
-Your current `chat_services.dart` contains:
-
-```dart
-final String baseUrl = 'http://192.168.30.37:5000';
-```
-
-**Don't put your actual local IP in the public GitHub repository.** I'd change this before pushing, for example to:
-
-```dart
-final String baseUrl = 'http://YOUR_LOCAL_IP:5000';
-```
-
-Even better, later you can make the backend URL configurable.
 
 Also, your Python variable is named `country` even though it actually contains the **user's prompt**. For a polished GitHub project, I'd rename `country` → `prompt` throughout `app.py`. That will make the code much easier for an interviewer/recruiter to understand.
 
