@@ -372,12 +372,6 @@ Therefore, use your computer's local network IP address in:
 chat_services.dart
 ```
 
-For example:
-
-```dart
-final String baseUrl = 'http://192.168.x.x:5000';
-```
-
 Make sure:
 
 1. Your phone and computer are connected to the same Wi-Fi network.
@@ -386,10 +380,6 @@ Make sure:
 ```python
 app.run(host="0.0.0.0", port=5000)
 ```
-
-3. Your firewall allows connections to port `5000`.
-
-> **Important:** Do not commit your personal/local IP address to GitHub. Replace it with a configurable value or example address before publishing the repository.
 
 ---
 
@@ -482,93 +472,8 @@ AI:
 I'm doing well! Thanks for asking. How can I help you today?
 ```
 
----
 
-# 🎯 Learning Objectives
 
-This project was developed to understand and demonstrate:
-
-- Building a mobile application using Flutter
-- Creating REST APIs using Flask
-- Connecting Flutter applications with Python backends
-- Working with locally hosted Large Language Models
-- Using Ollama for local LLM inference
-- Integrating LangChain with an LLM
-- Designing prompt templates
-- Handling HTTP requests and JSON responses
-- Building a real-time conversational UI
-- Structuring a frontend-backend AI application
-
----
-
-# 🔮 Future Improvements
-
-Possible improvements for future versions include:
-
-- 💾 Chat history persistence
-- 🧠 Conversation memory
-- 🎙️ Voice input and output
-- 🌙 Dark mode
-- 👤 User authentication
-- ⚡ Streaming AI responses
-- 📡 WebSocket-based communication
-- 🗃️ Database integration
-- ☁️ Cloud deployment
-- 🔐 Environment-based configuration
-- 🧪 Automated API testing
-- 📊 Response evaluation and monitoring
-- 🔄 Support for multiple LLM models
-
----
-
-# ⚠️ Current Limitations
-
-- The LLaMA model must be available locally through Ollama.
-- The backend must be running for the Flutter application to communicate with the chatbot.
-- Network configuration is required when using a physical mobile device.
-- The current implementation does not persist conversations after the application session ends.
-- The current API does not include authentication.
-- The application currently uses a fixed backend URL.
-
----
-
-# 🔐 Security Notes
-
-Before publishing this project to GitHub:
-
-- Do not commit private IP addresses.
-- Do not commit API keys or passwords.
-- Do not commit virtual environments.
-- Do not commit build files or generated files unnecessarily.
-
-A basic `.gitignore` should include:
-
-```gitignore
-# Python
-venv/
-__pycache__/
-*.pyc
-
-# Flutter
-.dart_tool/
-.flutter-plugins
-.flutter-plugins-dependencies
-.packages
-build/
-
-# IDE
-.vscode/
-.idea/
-
-# Environment files
-.env
-
-# OS
-.DS_Store
-Thumbs.db
-```
-
----
 
 # 👨‍💻 Author
 
@@ -588,8 +493,3 @@ If you found this project useful or interesting, consider giving the repository 
 
 ---
 ```
-
-
-Also, your Python variable is named `country` even though it actually contains the **user's prompt**. For a polished GitHub project, I'd rename `country` → `prompt` throughout `app.py`. That will make the code much easier for an interviewer/recruiter to understand.
-
-If you're putting this project on your resume/GitHub portfolio, I would also recommend adding **2–3 screenshots and a small architecture diagram** to the README—the project will look substantially more professional.
