@@ -2,7 +2,7 @@ import 'dart:convert';
 import 'package:http/http.dart' as http;
 
 class ChatService {
-  final String baseUrl = 'http://192.168.30.37:5000';
+  final String baseUrl = 'http://YOUR_LOCAL_IP:5000';
 
   Future<String> getResponse(String prompt) async {
     final response = await http.post(
