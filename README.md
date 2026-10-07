@@ -490,6 +490,3 @@ Computer Science & Engineering Graduate
 # ⭐ If You Like This Project
 
 If you found this project useful or interesting, consider giving the repository a ⭐ on GitHub.
-
----
-```
